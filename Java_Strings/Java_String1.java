@@ -1,5 +1,8 @@
 package Java_Strings;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Java_String1 {
     public static void main(String[] args) {
         
@@ -40,15 +43,51 @@ public class Java_String1 {
         System.out.println(res);
 
 
+        // .isEmpty()
 
+        String word6 = "";
+
+        System.out.println(word6.isEmpty());
+        
         // ******************************(String + charArray)**********************************
 
+
+        // String.join(delimiter, arr (or) Direct words)
+        String arr[] = {"Suhail", "Nasrin"};
+
+        String word11 = String.join(" ", arr);
+
+        System.out.println(word11);
+
+        // spltit()    ******************(((IIMMPP)))*******************
+
+        String word22 = "My name is Suhail";
+        String arr11[] = word22.split(" ");
+
+        
+        System.out.println(Arrays.toString(arr11));
+        
+
+
+        // .copyValueOf( String, StartInd(int), count(int) )
         char a[] = {'h', 'e', 'l', 'l', 'o'};
         
         String AfterSliceCopy = "";
         AfterSliceCopy = AfterSliceCopy.copyValueOf(a, 0, 3); 
 
         System.out.println("After Slice Copy : "+AfterSliceCopy);
+
+        // String.replace(original, change)
+
+        String AfterReplace = word.replace("Suhail", "Nasrin");
+        System.out.println("After Replacement of Word : "+AfterReplace);
+
+        // replaceAll() *********** replaceFirst()
+
+
+
+
+        
 
 
     }
